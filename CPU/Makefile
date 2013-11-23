@@ -1,10 +1,10 @@
 build/vecAdd_c.out: vecAdd.c
 	mkdir -p build
-	cc vecAdd.c -o build/vecAdd.out
+	cc vecAdd.c -o build/vecAdd_c.out
 
 build/vecAdd_f.out: vecAdd.f90
 	mkdir -p build
-	ftn vecAdd.f90 -o build/vecAdd.out
+	ftn vecAdd.f90 -o build/vecAdd_f.out
 
 clean:
 	if [ -d build ]; then rm -Rf build; fi
