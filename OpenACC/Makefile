@@ -2,7 +2,7 @@ all: clean checkEnv setFlags vecAdd_c vecAdd_reduction_c vecAdd_f vecAdd_reducti
 
 .PHONY: checkEnv setFlags clean
 
-checkenv:
+checkEnv:
 ifdef CRAY_PRGENVCRAY
     ifndef HMPP_BIN_PATH
         ifndef CRAY_ACCEL_TARGET
