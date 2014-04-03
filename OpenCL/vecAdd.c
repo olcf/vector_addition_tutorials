@@ -123,7 +123,7 @@ int main( int argc, char* argv[] )
     double sum = 0;
     for(i=0; i<n; i++)
         sum += h_c[i];
-    printf("final result: %f\n", sum/n);
+    printf("final result: %f\n", sum/(double)n);
  
     // release OpenCL resources
     clReleaseMemObject(d_a);

@@ -39,7 +39,7 @@ int main( int argc, char* argv[] )
         }
     }
  
-    sum = sum/n;
+    sum = sum/(double)n;
     printf("final result: %f\n", sum);
  
     // Release memory
