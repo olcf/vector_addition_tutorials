@@ -1,4 +1,4 @@
-all: checkEnv clean vecAdd_cl
+all: checkEnv clean vecAdd_cl vecAdd_cc_cl
 
 .PHONY: checkEnv clean
 
@@ -6,7 +6,7 @@ vecAdd_cl: vecAdd.c
 	mkdir -p bin
 	cc -lOpenCL -o bin/vecAdd_cl vecAdd.c
 
-vecAdd_ccl: vecAdd.cc
+vecAdd_cc_cl: vecAdd.cc
 	mkdir -p bin
 	CC -lOpenCL -o bin/vecAdd_ccl vecAdd.cc
 

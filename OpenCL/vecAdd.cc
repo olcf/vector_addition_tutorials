@@ -131,7 +131,7 @@ int main(int argc, char *argv[])
     double sum = 0;
     for(int i=0; i<n; i++)
         sum += h_c[i];
-    std::cout<<"final result: "<<sum/n<<std::endl;
+    std::cout<<"final result: "<<sum/(double)n<<std::endl;
  
     // Release host memory
     delete(h_a);
